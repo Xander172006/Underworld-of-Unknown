@@ -32,7 +32,9 @@ Ook voor de collisions met de sprites heb ik via een box Collidor 2D en een "Gro
 
 ## **Volgende stappen:**
 
-De volgende stappen voor dag 2 is om de environmennt te maken en ook al wat extra sprites voor toekomstige vijanden en object voor in de game te maken.
+De volgende stappen voor dag 3 is om de vijanden in het spel te zetten en ook de spelers zijn levensbar te maken.
+Ik wil ook de eerste vijand zijn sprites gaan maken en ook de animaties voor de speler.
 
-- Interactive Objects
-- Create enemy sprites
+- Vijanden toevoegen
+- Speler zijn levensbalk maken
+- Vijand zijn animaties maken
