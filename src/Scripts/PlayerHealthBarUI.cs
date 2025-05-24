@@ -19,10 +19,11 @@ public class PlayerHealthBarUI : MonoBehaviour
         UpdateHealthBar();
     }
 
-    void UpdateHealthBar()
+  void UpdateHealthBar()
     {
         if (playerHealth == null || healthBarStages.Length == 0) return;
         int health = Mathf.Clamp(playerHealth.CurrentHealth, 0, healthBarStages.Length - 1);
         healthBarImage.sprite = healthBarStages[health];
+        Debug.Log("Setting health bar sprite to: " + healthBarStages[health].name);
     }
 }
