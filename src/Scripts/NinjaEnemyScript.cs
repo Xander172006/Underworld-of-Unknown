@@ -31,6 +31,7 @@ public class NinjaEnemyScript : MonoBehaviour
     public float patrolSpeed = 1f;        // Slower speed when patrolling
     private int patrolDirection = 1;      // 1 = right, -1 = left
 
+    private bool hasDealtDamage = false; // NEW: ensures player is only damaged once per attack
 
     void Start()
     {
@@ -65,12 +66,26 @@ public class NinjaEnemyScript : MonoBehaviour
             else if (attackTimer < attackPrepairTime + attackStabTime)
             {
                 spriteRenderer.sprite = attackStabbingSprite;
-                // Optionally: deal damage to player here if in range
+                // Deal damage to player if in range and not already hit this attack
+                if (!hasDealtDamage)
+                {
+                    float dist = Vector2.Distance(transform.position, player.position);
+                    if (dist <= attackRange)
+                    {
+                        var playerHealth = player.GetComponent<PlayerHealthManagerController>();
+                        if (playerHealth != null)
+                        {
+                            playerHealth.TakeDamage(1);
+                            hasDealtDamage = true;
+                        }
+                    }
+                }
             }
             else
             {
                 isAttacking = false;
                 attackTimer = 0f;
+                hasDealtDamage = false; // Reset for next attack
             }
             rb.velocity = Vector2.zero;
             return;

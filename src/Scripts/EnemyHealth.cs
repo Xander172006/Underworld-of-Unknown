@@ -1,26 +1,21 @@
 using UnityEngine;
-using UnityEngine.UI;
 
-// --- Health Manager ---
-public class PlayerHealthManagerController : MonoBehaviour
+public class EnemyHealth : MonoBehaviour
 {
     public int maxHealth = 3;
     private int currentHealth;
-    public int CurrentHealth => currentHealth;
-
+    private SpriteRenderer spriteRenderer;
     public Color hitColor = Color.red;
     public float hitFlashDuration = 0.2f;
     private Color originalColor;
     private float hitTimer = 0f;
     private bool isHit = false;
-    private SpriteRenderer spriteRenderer;
 
     void Start()
     {
         currentHealth = maxHealth;
         spriteRenderer = GetComponent<SpriteRenderer>();
-        if (spriteRenderer != null)
-            originalColor = spriteRenderer.color;
+        originalColor = spriteRenderer.color;
     }
 
     void Update()
@@ -39,17 +34,12 @@ public class PlayerHealthManagerController : MonoBehaviour
     public void TakeDamage(int amount)
     {
         currentHealth -= amount;
-        currentHealth = Mathf.Clamp(currentHealth, 0, maxHealth);
-        Debug.Log("Player took damage! Health: " + currentHealth);
-
-        // Flash red
         if (spriteRenderer != null)
         {
             spriteRenderer.color = hitColor;
             hitTimer = 0f;
             isHit = true;
         }
-
         if (currentHealth <= 0)
         {
             Die();
@@ -58,7 +48,6 @@ public class PlayerHealthManagerController : MonoBehaviour
 
     private void Die()
     {
-        Debug.Log("Player died!");
-        gameObject.SetActive(false);
+        Destroy(gameObject);
     }
 }

@@ -2,6 +2,7 @@ using UnityEngine;
 
 public class CameraFollow : MonoBehaviour
 {
+    public Transform leftBoundary;
     public Transform target;         
     public float smoothSpeed = 0.125f;
     public Vector3 offset;         
@@ -13,7 +14,7 @@ public class CameraFollow : MonoBehaviour
         Vector3 desiredPosition = target.position + offset;
         Vector3 smoothedPosition = Vector3.Lerp(transform.position, desiredPosition, smoothSpeed);
 
-        // Lock the Y position to the camera's current Y (or a fixed Y value)
-        transform.position = new Vector3(smoothedPosition.x, transform.position.y, transform.position.z);
+        float clampedX = Mathf.Max(smoothedPosition.x, leftBoundary.position.x);
+        transform.position = new Vector3(clampedX, transform.position.y, transform.position.z);
     }
 }
