@@ -61,7 +61,7 @@ public class PlayerController : MonoBehaviour
         }
     }
 
-    // Visualize attack range in editor
+    // --- Visualize attack range in editor ---
     void OnDrawGizmosSelected()
     {
         Gizmos.color = Color.red;
@@ -70,7 +70,7 @@ public class PlayerController : MonoBehaviour
     
     void Attack()
     {
-        // Detect enemies in range
+        // --- Detect enemies in range ---
         Collider2D[] hitEnemies = Physics2D.OverlapCircleAll(transform.position, attackRange, enemyLayer);
         foreach (Collider2D enemy in hitEnemies)
         {
@@ -82,12 +82,11 @@ public class PlayerController : MonoBehaviour
         }
     }
 
+
     void Update()
     {
         // -- move on the horizontal axis --
         float horizontalInput = Input.GetAxis("Horizontal");
-
-
 
         // --- Check how long the player has been holding the input ---
         if (Mathf.Abs(horizontalInput) > 0.1f)
@@ -146,15 +145,18 @@ public class PlayerController : MonoBehaviour
         transform.position = pos;
     }
 
+
     void OnCollisionEnter2D(Collision2D collision)
     {
         Debug.Log("Collided with: " + collision.gameObject.name);
+        
+        // -- Collision with ground --
         if (collision.gameObject.CompareTag("Ground"))
         {
-            Debug.Log("Landed on ground");
             isGrounded = true;
         }
 
+        // -- Collision with dangerous objects --
         if (collision.gameObject.CompareTag("Spike") || collision.gameObject.CompareTag("Enemy"))
         {
             PlayerHealthManagerController playerHealth = GetComponent<PlayerHealthManagerController>();

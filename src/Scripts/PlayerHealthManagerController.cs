@@ -1,9 +1,9 @@
 using UnityEngine;
 using UnityEngine.UI;
 
-// --- Health Manager ---
 public class PlayerHealthManagerController : MonoBehaviour
 {
+    // -- Set up max health, current health, hit color, and hit flash duration --
     public int maxHealth = 3;
     private int currentHealth;
     public int CurrentHealth => currentHealth;
@@ -15,8 +15,10 @@ public class PlayerHealthManagerController : MonoBehaviour
     private bool isHit = false;
     private SpriteRenderer spriteRenderer;
 
+
     void Start()
     {
+        // -- Set health to max and render in original color --
         currentHealth = maxHealth;
         spriteRenderer = GetComponent<SpriteRenderer>();
         if (spriteRenderer != null)
@@ -25,6 +27,7 @@ public class PlayerHealthManagerController : MonoBehaviour
 
     void Update()
     {
+        // -- FLash color when hit --
         if (isHit)
         {
             hitTimer += Time.deltaTime;
@@ -38,11 +41,12 @@ public class PlayerHealthManagerController : MonoBehaviour
 
     public void TakeDamage(int amount)
     {
+        // -- Reduce health by the amount specified and handle death --
         currentHealth -= amount;
         currentHealth = Mathf.Clamp(currentHealth, 0, maxHealth);
         Debug.Log("Player took damage! Health: " + currentHealth);
 
-        // Flash red
+        // -- Flash color --
         if (spriteRenderer != null)
         {
             spriteRenderer.color = hitColor;
@@ -50,6 +54,7 @@ public class PlayerHealthManagerController : MonoBehaviour
             isHit = true;
         }
 
+        // -- Player dies if health is 0 --
         if (currentHealth <= 0)
         {
             Die();

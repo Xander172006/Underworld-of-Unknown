@@ -3,9 +3,11 @@ using UnityEngine.SceneManagement;
 
 public class GameOverUI : MonoBehaviour
 {
+    // --- Restarts the gam on the current scene ---
     public void RestartGame()
     {
         SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
-        // Optionally, reset Time.timeScale = 1f;
+
+        // Feature to update/reset timer (Not implemented)
     }
 }

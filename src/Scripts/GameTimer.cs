@@ -1,11 +1,12 @@
 using UnityEngine;
-using TMPro; // Use UnityEngine.UI if using legacy Text
+using TMPro;
 
 public class GameTimer : MonoBehaviour
 {
-    public float timeRemaining = 300f; // 5 minutes in seconds
-    public TextMeshProUGUI timerText;  // Assign in Inspector
-
+    public TextMeshProUGUI timerText;  
+ 
+    // --- Set timer to 5 minutes (300 seconds) ---
+    public float timeRemaining = 300f; 
     private bool timerIsRunning = true;
 
     void Update()
@@ -14,11 +15,13 @@ public class GameTimer : MonoBehaviour
         {
             if (timeRemaining > 0)
             {
+                // -- Update the timer every frame --
                 timeRemaining -= Time.deltaTime;
                 UpdateTimerDisplay();
             }
             else
             {
+                // -- Stop the timer when it reaches zero --
                 timeRemaining = 0;
                 timerIsRunning = false;
                 UpdateTimerDisplay();
@@ -28,8 +31,11 @@ public class GameTimer : MonoBehaviour
 
     void UpdateTimerDisplay()
     {
+        // -- Calculate minutes and seconds from the remaining time --
         int minutes = Mathf.FloorToInt(timeRemaining / 60);
         int seconds = Mathf.FloorToInt(timeRemaining % 60);
+
+        // -- Format the timer text to display MM:SS --
         timerText.text = string.Format("{0:00}:{1:00}", minutes, seconds);
     }
 }

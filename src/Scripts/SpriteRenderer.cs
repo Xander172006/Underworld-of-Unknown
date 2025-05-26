@@ -43,11 +43,15 @@ public class PlayerSpriteController : MonoBehaviour
 
     void Start()
     {
+        // --- Initialize components and variables ---
         rb = GetComponent<Rigidbody2D>();
         spriteRenderer = GetComponent<SpriteRenderer>();
         playerController = GetComponent<PlayerController>();
+
+        // -- set freeze so to not rotate sprites --
         rb.freezeRotation = true;
 
+        // -- set walking sprites ---
         walkSprites = new Sprite[] { PlayerWalking1, PlayerWalking2, PlayerWalking3 };
     }
 
