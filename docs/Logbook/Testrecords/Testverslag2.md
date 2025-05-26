@@ -13,5 +13,11 @@ Handmatig getest door het spel te starten en vijanden te benaderen om te kijken 
 - Animaties worden correct afgespeeld bij beweging en aanval.
 - Geen vastlopers of glitches gezien.
 
+### Feedback:
+- De beweging van de vijanden voelt natuurlijk aan, maar de animaties kunnen nog iets vloeiender.
+
+### Aanpassing:
+- verbeterde de animaties met juiste pixel hogen en framesnelheden.
+
 ### Opmerkingen:
 - Sprites en animaties werken goed samen, eigen sprites zijn goed zichtbaar.

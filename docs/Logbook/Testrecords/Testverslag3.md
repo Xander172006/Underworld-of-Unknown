@@ -13,5 +13,11 @@ Speler en vijand laten vechten, kijken of levensbalk juist afneemt bij schade.
 - Bij schade wordt de levensbalk minder.
 - Rode overlay verschijnt bij hit.
 
+### Feedback:
+- Combat voelt responsief aan, maar de levensbalk kan visueel iets duidelijker zijn.
+
+### Aanpassing:
+- Levensbalk iets groter gemaakt.
+
 ### Opmerkingen:
 - UI-elementen blijven netjes op hun plek, combat voelt responsief.

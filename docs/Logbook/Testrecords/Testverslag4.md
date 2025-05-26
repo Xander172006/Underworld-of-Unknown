@@ -14,5 +14,6 @@ Spel gestart, op play gedrukt, gespeeld tot de speler doodging.
 - Game Over menu verschijnt als de speler doodgaat.
 - Reset-knop werkt en start het level opnieuw.
 
+
 ### Opmerkingen:
 - Geen bugs gevonden, flow werkt zoals bedoeld.
