@@ -4,18 +4,14 @@ _Tijd besteed: [3 uur]_
 
 ## Inleiding:
 
-Voor vandaag heb ik dus wat ik gisteren niet kon doen afgemaakt, namelijk de levensbalk van de speler met daarbij de combat logica.
-Ook had ik nog wat extra tijd genomen om wat extra assets te maken voo3 de environment en decoratieve props.
+Ik heb vandaag de start menu gemaakt voor mijn game met de play button. Dit was best tof om te zien werken toen ik het goed had geimplementeerd. <br>
 
 <br>
 
 ## **Uitgevoerde taken:**
-- Levensbalk UI toegevoegd aan de speler
-- Levensbalk Functionaliteit gemaakt
-- Combat logica gemaakt voor de speler en vijanden
+- Start menu scene gemaakt
+- Play button gemaakt
 
-### Bonus:
-- Decoratieve props gemaakt voor de omgeving
 
 <br>
 
@@ -23,23 +19,20 @@ Ook had ik nog wat extra tijd genomen om wat extra assets te maken voo3 de envir
 
 ### Problemen:
 
-- `HealthBar` Ik zat nogal wat vast te lopen met de untiy editor en hoe de UI werkte voor de levensbalk. Ik dacht namelijk dat als ik een main canvas element had dat ik die ook zo moest verschuiven in het level zelf. <br>
-Maar dit bleek niet het geval te zijn, omdat de UI elementen altijd op een vaste plek staan in de game. <br>
-
-- `Combat System` De combat logica was vervellend in het begin, omdat ik niet makelijk kon zien wanner ik of de vijand geraakt werd
+In het begin dacht ik om voor de start menu gewoon een nieuwe canvas te maken ment daarin de UI elementen, maar dat werkte niet met de code die ik in gedachte had.
+Toen ik uiteindelijk wel wist hoe het moest door het maken van een nieuwe scene, was dit nog niet zo eenvoudig als voorheen gedacht.
 
 
 
 ### Oplossingen:
 
-- Ik moest dus in dit geval voor de levensbalk hem zo positioneren in de canvas, zodat wanneer ik het spel speel de levensbalk ook op de juiste plek linksboven stond.
-- Mijn oplossing voor de combat logica kwam uiteindelijk in het brengen van een rode overlay op de entity als die geraakt werd, en dat hielp mij enorm.
+Dus door het maken van een nieuwe scene en daarin de UI elementen te zetten, kon ik de code en build logica zo aanpassen dat het spel eerst begint bij het start menu en dan pas naar de game scene gaat zodra er op play geklikt wordt. <br>
 
 <br>
 
 ## **Volgende stappen:**
 
-De volgende stap denk ik nog voordat ik de GameOver en reset knop ga maken, eerst nog de camera volgen logica wil gaan maken of op zijn minst wil verbeteren, want dat heeft mij wel deze afgelopen dagen erg in de weg gezeten.
+Er zijn nog een paar kleine dingen die ik kan toevoegen aan mijn game, zoals de timer en coin collectie systeem. Morgen is dan ook wel de laatste echte dag dat ik hier volluit aan kan werken, dus kijk ik wel hoever ik kom.
 
-- Camera volgen logica verbeteren
-- Left boundary voor de camera en speler maken
+- TimerText UI maken
+- Coin collectie systeem maken
