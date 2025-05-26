@@ -1,40 +1,42 @@
 # Daglog - [21-05-2025] Underworld of Mysteries
 
-_Tijd besteed: [3 uur]_
+_Tijd besteed: [4 uur]_
 
 ## Inleiding:
 
-Vandaag was is niet zo zeer veel in de code gedoken, maar begon ik met het verzamellen van assets en decoratieve props die ik zou willen gaan gebruiken in mijn game.
-Ik keek daarom op verschillende websites waar ik deze assests te vinden waren om ze te downloaden.
-
-Gelukkig heeft unity een erg slimme manier om van png afbeeldingen met meerdere sprite objecten het in stukken te snijden, zodat ik exact de sprites had die wou implementeren
+Vandaag heb ik de sprites van de vijanden en hun aanval animaties gemaakt.
+Daarna ging ik ook in de code de vijanden hun bewegingen en animaties implementeren. Ik was helaas nog niet helemaal aan de levensbalk van de speler toegekomen voor vandaag.
 
 <br>
 
 ## **Uitgevoerde taken:**
-- Het vinden van decoratives en props
-- Uitbreiden van player sprites
+- Het toevoegen van vijanden in het spel
+- De logica voor de vijanden hun bewegingen en animaties
 
+<br>
 
 ## **Problemen/Oplossingen:**
 
 ### Problemen:
 
-Ik liep eerst nog wel vast met het begrijpen hoe ik een afbeelding kon snijden tot meerdere stukken en ook de juiste collisions aan hun kon geven.
-Gelukkig na het kijken van wat youtube videos hierover vond ik al snel een oplossing hiervoor.
+Mijn grootste probleem was niet zo zeer de logic voor het coderen van de vijanden, maar juist eerst weten hoe ik de vijanden sprites zou willen hebben.
+Omdat de meeste sites je geen toegang vaak geven om gratis sprites te gebruiken, besloot ik om zelf de sprites te maken.
+Dit koste zo wel 2 uur ongeveer tot ik alle animaties had zoals ik wou.
+
+Verder was de code niet lastig om te maken en kwam ik aan alle features die ik wou toe.
 
 ### Oplossingen:
 
-Voor het snijden van afbeeldingen kon ik namelijk zelf exact met grid layouts de stukken die ik wou goed aanpassen.
-Ook voor de collisions met de sprites heb ik via een box Collidor 2D en een "Groud" tag ervoor gezorgd dat mijn speler erop kon blijven staan
+Ik had inspiratie gehaald van google en kon zo de sprite animaties makkelijker maken dan dat ik het helemaal zelf moest gaan bedenken.
+Ook vroeg ik nog hulp aan copilot om voor de code als zowel de unity editor de juiste setup te maken voor de vijanden.
 
-
+<br>
 
 ## **Volgende stappen:**
 
-De volgende stappen voor dag 3 is om de vijanden in het spel te zetten en ook de spelers zijn levensbar te maken.
-Ik wil ook de eerste vijand zijn sprites gaan maken en ook de animaties voor de speler.
+De volgende stappen voor dag 4 is, omdat ik niet toekwam aan de levenbalk van de speler die dus dan te verplaatsen naar morgen. Daarnaast zal ik ook alvast de combat logica maken voor zowel de speler als de vijanden.
+Hiermee hoop ik al dan dat er een basis is voor de combat in het spel.
 
-- Vijanden toevoegen
-- Speler zijn levensbalk maken
-- Vijand zijn animaties maken
+- Levensbalk toevoegen
+- Hit points wanneer de speler of vijand geraakt wordt
+- Logica voor de combat
