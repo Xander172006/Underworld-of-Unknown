@@ -25,7 +25,7 @@ Zodra het spel laad zie je het beginscherm waar je op de play knop kan drukken.
 **Game Over:** Zodra je levensbar op 0 staat betekent dit dat je verloren hebt, en je dan het game over menu ziet. Klik op de restart knop om weer opnieuw te kunnen beginnen.
 
 
-<img src="https://github.com/Xander172006/Underworld-of-Unknown/blob/main/docs/Images/Underworld%20of%20Mysteries%20Game.png" width="500px">
+<img src="https://github.com/Xander172006/Underworld-of-Unknown/blob/main/docs/Images/Underworld%20of%20Mysteries%20Game.png" width="600px">
 
 <br>
 
@@ -38,9 +38,10 @@ Je kunt ook gebruik maken van de links die ik hieronder heb staan:
 
 - **Decoratieve props** en **Environment** sprites zijn gevonden op [CraftPix](https://craftpix.net) en de unity asset store.
 
-
-<img src="https://github.com/Xander172006/Underworld-of-Unknown/blob/main/docs/Images/Main%20Character%20(Underworld%20of%20Mysteries).png" width="200px">
-<img src="https://github.com/Xander172006/Underworld-of-Unknown/blob/main/docs/Images/NinjaEnemy%20(Underworld%20of%20Mysteries).png" alt="Ninja Enemy" width="200px">
+<div style="display: flex; justify-content: start; width: 100%;">
+  <img src="https://github.com/Xander172006/Underworld-of-Unknown/blob/main/docs/Images/Main%20Character%20(Underworld%20of%20Mysteries).png" width="200px">
+  <img src="https://github.com/Xander172006/Underworld-of-Unknown/blob/main/docs/Images/NinjaEnemy%20(Underworld%20of%20Mysteries).png" alt="Ninja Enemy" width="200px">
+</div>
 
 <br>
 
