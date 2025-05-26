@@ -1,11 +1,11 @@
-# Daglog - [22-05-2025] Underworld of Mysteries
+# Daglog - [24-05-2025] Underworld of Mysteries
 
 _Tijd besteed: [3 uur]_
 
 ## Inleiding:
 
 Voor vandaag heb ik dus wat ik gisteren niet kon doen afgemaakt, namelijk de levensbalk van de speler met daarbij de combat logica.
-Ook had ik nog wat extra tijd genomen om wat extra assets te maken voor de environment en decoratieve props.
+Ook had ik nog wat extra tijd genomen om wat extra assets te maken voo3 de environment en decoratieve props.
 
 <br>
 
