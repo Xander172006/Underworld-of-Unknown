@@ -40,7 +40,7 @@ Je kunt ook gebruik maken van de links die ik hieronder heb staan:
 
 
 <img src="https://github.com/Xander172006/Underworld-of-Unknown/blob/main/docs/Images/Main%20Character%20(Underworld%20of%20Mysteries).png" width="200px">
-<img src="https://github.com/Xander172006/Underworld-of-Unknown/blob/main/docs/Images/Main%20Character%20(Underworld%20of%20Mysteries).png" alt="Ninja Enemy" width="200px">
+<img src="https://github.com/Xander172006/Underworld-of-Unknown/blob/main/docs/Images/NinjaEnemy%20(Underworld%20of%20Mysteries).png" alt="Ninja Enemy" width="200px">
 
 <br>
 
