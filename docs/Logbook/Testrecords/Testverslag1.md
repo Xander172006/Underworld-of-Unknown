@@ -16,10 +16,10 @@ Handmatig getest door het spel te starten en de pijltjestoetsen/A-D te gebruiken
 - Geen bugs gevonden bij het landen of tijdens het springen.
 
 ### Feedback:
-- De beweging voelt soepel aan, maar de spronghoogte kan nog iets worden aangepast voor een betere ervaring.
+Tijdens het testen merkte ik dat de speler soms te langzaam sprong en niet altijd goed landde op platforms.
 
 ### Aanpassing:
-- verhoogd de spronghoogte van de speler.
+De sprongkracht van de speler is iets verhoogd en de collision box is aangepast zodat de speler beter landt.
 
 ### Opmerkingen:
 - De snelheden voelden goed aan na het aanpassen van de properties en floats.

@@ -14,6 +14,11 @@ Spel gestart, op play gedrukt, gespeeld tot de speler doodging.
 - Game Over menu verschijnt als de speler doodgaat.
 - Reset-knop werkt en start het level opnieuw.
 
+### Feedback:
+Na het resetten bleef de timer soms op de oude waarde staan.
+
+### Aanpassing:
+De timer wordt nu bij het resetten van het spel ook weer op nul gezet.
 
 ### Opmerkingen:
 - Geen bugs gevonden, flow werkt zoals bedoeld.
